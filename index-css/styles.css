@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&family=Source+Sans+Pro:ital,wght@0,300;1,200&display=swap');
+
+/*code for header/navbar and footer */
+body{
+    margin: 0;
+    min-height: 100vh;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #C6E0F1ff;
+    display: flex;
+    justify-content: space-around;
+    height: 8vh;
+    align-items: center;
+}
+    
+li a{
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+    
+.current{
+    color: black;
+    text-decoration: underline;
+}
+/* problem: footer isn't sticking to bottom*/
+.footer{
+    display: flex;
+    background-color: #C6E0F1ff;
+    position: relative;
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+}
+    
+@media screen and (min-width: 768px){
+    ul{
+        height: 12vh;}
+    li a{
+        font-size: 28px;}
+    .footer{
+        height: 6vh;}
+}
+
+/*section for content area*/
+
+.title{
+    padding: 2%;
+}
+
+.info{
+    margin: 0 auto;
+    width: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.responsive {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+p{
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    font-style: light;
+    font-weight: 300;
+    font-size: 16pt;
+}
+
+#hiding{
+    display: none;
+}
+
+.firstimage{
+    width: 55vw;
+    height: 100%;
+    text-align: center;
+}
+
+#subhead{
+    text-align: left;
+    padding-left: 5.5%;
+}
+
+#marge{
+    margin: 40px;
+    color: white;
+}
+
+.padding{
+    padding-left: 10%;
+}
+
+#wrap{
+    flex-wrap: wrap;
+}
+.button-container{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.button {
+    background-color: #D5987Bff;
+    border: none;
+    font-size: 20pt;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    color: black;
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #99badd;
+}
+
+@media screen and (min-width: 768px){
+    .info{
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .firstimage{
+        max-width: 40%;
+    }
+
+    .image2{
+        max-width: 70%;
+    }
+
+    #hiding{
+        display: contents;
+        display: block;
+    }
+    .button-container{
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .bigflex{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .center{ 
+        align-self: center;
+        padding-right: 50px;
+    }
+
+    .flex1{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
